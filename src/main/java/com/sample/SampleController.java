@@ -10,6 +10,6 @@ public class SampleController {
 
     @GetMapping("/test")
     public String sampleTest(){
-        return "Sample java test project";
+        return "Sample java test project AWS CI/CD is working";
     }
 }
