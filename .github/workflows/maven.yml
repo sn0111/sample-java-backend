@@ -42,5 +42,8 @@ jobs:
             echo "JAR is already running. Stopping it first."
             pkill -f 'java -jar target/sample-java-backend-0.0.1-SNAPSHOT.jar'
           fi
+      - name: Run the JAR file
+        run: java -jar $(ls target/*.jar)
+
 
 
