@@ -38,9 +38,9 @@ jobs:
           token: ${{ secrets.PAT_TOKEN }}
       - name: Check if existing JAR is running
         run: |
-          if pgrep -f 'java -jar target/your-jar-file-name.jar'; then
+          if pgrep -f 'java -jar target/sample-java-backend-0.0.1-SNAPSHOT.jar'; then
             echo "JAR is already running. Stopping it first."
-            pkill -f 'java -jar target/your-jar-file-name.jar'
+            pkill -f 'java -jar target/sample-java-backend-0.0.1-SNAPSHOT.jar'
           fi
 
 
