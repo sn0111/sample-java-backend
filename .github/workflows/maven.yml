@@ -43,7 +43,9 @@ jobs:
             pkill -f 'java -jar target/sample-java-backend-0.0.1-SNAPSHOT.jar'
           fi
       - name: Run the JAR file
-        run: java -jar $(ls target/*.jar)
+        run: java -jar $(ls target/*.jar) & 
+      - name: Next step
+        run: echo "This step runs immediately after starting the JAR file."
 
 
 
